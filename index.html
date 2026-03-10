@@ -343,6 +343,8 @@ h1.proj-title{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);font-wei
   nav{padding:1rem 1.5rem}
   .nav-links{display:none}
   #hero{grid-template-columns:1fr;padding:7rem 1.5rem 4rem}
+  .hero-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; width: 100%; }
+  .hero-meta > div { max-width: 100%; text-align: left; }
   .hero-photo{display:none}
   .section-inner,.contact-inner,.proj-section,.proj-hero{padding:4rem 1.5rem}
   .about-grid,.cert-grid,.edu-cards,.contact-inner,.skills-two-col{grid-template-columns:1fr;gap:2rem}
@@ -390,8 +392,8 @@ h1.proj-title{font-family:var(--display);font-size:clamp(2rem,5vw,4rem);font-wei
 <nav>
   <div class="nav-logo" onclick="showHome()">Praise C. Nwachukwu (M.Sc)</div>
   <ul class="nav-links" id="nav-main">
-    <li><a onclick="showHome();setTimeout(()=>document.getElementById('about').scrollIntoView({behavior:'smooth'}),120)">About</a></li>
-    <li><a onclick="showHome();setTimeout(()=>document.getElementById('projects').scrollIntoView({behavior:'smooth'}),120)">Projects</a></li>
+    <li><a onclick="showHome();setTimeout(()=>document.getElementById('about').scrollIntoView({behavior:'smooth'}),120)">Projects</a></li>
+    <li><a onclick="showHome();setTimeout(()=>document.getElementById('projects').scrollIntoView({behavior:'smooth'}),120)">About</a></li>
     <li><a onclick="showHome();setTimeout(()=>document.getElementById('experience').scrollIntoView({behavior:'smooth'}),120)">Experience</a></li>
     <li><a onclick="showHome();setTimeout(()=>document.getElementById('education').scrollIntoView({behavior:'smooth'}),120)">Education</a></li>
     <li><a onclick="showHome();setTimeout(()=>document.getElementById('contact').scrollIntoView({behavior:'smooth'}),120)" class="nav-cta">Contact</a></li>
