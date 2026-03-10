@@ -1325,7 +1325,7 @@ function showPortfolio() {
   document.getElementById('page-portfolio').style.display = 'block';
   document.getElementById('nav-main').style.display = 'none';
   document.getElementById('nav-back').style.display = 'flex';
-  window.scrollTo(0,0);
+  document.documentElement.scrollTop = 0;
   loadCanvaImages();
 }
 
@@ -1337,7 +1337,7 @@ function showProject(key) {
   pp.innerHTML = renderProject(key);
   document.getElementById('nav-main').style.display = 'none';
   document.getElementById('nav-back').style.display = 'flex';
-  window.scrollTo(0,0);
+  document.documentElement.scrollTop = 0;
 }
 
 function showHome() {
